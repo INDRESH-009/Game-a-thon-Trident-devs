@@ -23,13 +23,13 @@ export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const navLinks = [
-    { href: "#", label: "Dashboard", icon: <Home className="h-4 w-4 mr-2" /> },
-    { href: "#", label: "Daily Challenge", icon: <Lightbulb className="h-4 w-4 mr-2" /> },
-    { href: "#", label: "Games", icon: <Gamepad2 className="h-4 w-4 mr-2" /> },
-    { href: "#", label: "AI Coach", icon: <Brain className="h-4 w-4 mr-2" /> },
-    { href: "#", label: "Leaderboard", icon: <Trophy className="h-4 w-4 mr-2" /> },
-    { href: "#", label: "Events", icon: <Graduation className="h-4 w-4 mr-2" /> },
-    { href: "/dashboard", label: "Podcasts", icon: <Users className="h-4 w-4 mr-2" /> },
+    { href: "/dashboard", label: "Dashboard", icon: <Home className="h-4 w-4 mr-2" /> },
+    { href: "/daily-challenge", label: "Daily Challenge", icon: <Lightbulb className="h-4 w-4 mr-2" /> },
+    { href: "/games", label: "Games", icon: <Gamepad2 className="h-4 w-4 mr-2" /> },
+    { href: "/learn", label: "Learn", icon: <Brain className="h-4 w-4 mr-2" /> },
+    { href: "/leaderboard", label: "Leaderboard", icon: <Trophy className="h-4 w-4 mr-2" /> },
+    { href: "/events", label: "Events", icon: <Graduation className="h-4 w-4 mr-2" /> },
+    { href: "/podcasts", label: "Podcasts", icon: <Users className="h-4 w-4 mr-2" /> },
   ];
 
   return (
