@@ -47,7 +47,7 @@ export default function Navbar() {
             <Button
               asChild
               variant="ghost"
-              className="text-muted-foreground hover:text-primary"
+              className=" hover:text-primary"
               size="sm"
               key={idx}
             >
