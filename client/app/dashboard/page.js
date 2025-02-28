@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "../comps/Navbar";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
@@ -131,7 +130,7 @@ export default function Dashboard() {
               </CardFooter>
             </Card>
 
-            {/* Top Thinkers (Now Pink) */}
+            {/* Top Thinkers (Pink card, but gold/silver/bronze badges) */}
             <Card className="border-2 border-pink-200 shadow-lg bg-gradient-to-br from-pink-50 to-pink-100">
               <CardHeader className="pb-2">
                 <div className="flex items-center justify-between">
@@ -144,11 +143,12 @@ export default function Dashboard() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
+                  {/* 1st Place (Gold) */}
                   <div className="flex items-center gap-3">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-300/20">
-                      <Trophy className="h-4 w-4 text-pink-600" />
+                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-yellow-300/20">
+                      <Trophy className="h-4 w-4 text-yellow-600" />
                     </div>
-                    <Avatar className="h-9 w-9 border border-pink-500">
+                    <Avatar className="h-9 w-9 border border-yellow-600">
                       <AvatarImage src="/placeholder.svg?height=36&width=36" alt="User" />
                       <AvatarFallback>JD</AvatarFallback>
                     </Avatar>
@@ -156,28 +156,32 @@ export default function Dashboard() {
                       <div className="font-medium text-pink-900">Jessica Davis</div>
                       <div className="text-xs text-pink-700">Level 12 • 5,230 XP</div>
                     </div>
-                    <Badge variant="outline" className="bg-pink-300/10 text-pink-600">
+                    <Badge variant="outline" className="bg-yellow-300/10 text-yellow-600">
                       1st
                     </Badge>
                   </div>
+
+                  {/* 2nd Place (Silver) */}
                   <div className="flex items-center gap-3">
                     <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gray-300/20">
-                      <Trophy className="h-4 w-4 text-gray-400" />
+                      <Trophy className="h-4 w-4 text-gray-600" />
                     </div>
-                    <Avatar className="h-9 w-9 border border-gray-400">
+                    <Avatar className="h-9 w-9 border border-gray-600">
                       <AvatarImage src="/placeholder.svg?height=36&width=36" alt="User" />
                       <AvatarFallback>MK</AvatarFallback>
                     </Avatar>
                     <div className="flex-1">
-                      <div className="font-medium text-gray-900">Michael Kim</div>
-                      <div className="text-xs text-gray-700">Level 11 • 4,890 XP</div>
+                      <div className="font-medium text-pink-900">Michael Kim</div>
+                      <div className="text-xs text-pink-700">Level 11 • 4,890 XP</div>
                     </div>
-                    <Badge variant="outline" className="bg-gray-300/10 text-gray-400">
+                    <Badge variant="outline" className="bg-gray-300/10 text-gray-600">
                       2nd
                     </Badge>
                   </div>
+
+                  {/* 3rd Place (Bronze) */}
                   <div className="flex items-center gap-3">
-                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-amber-600/20">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-amber-300/20">
                       <Trophy className="h-4 w-4 text-amber-600" />
                     </div>
                     <Avatar className="h-9 w-9 border border-amber-600">
@@ -185,10 +189,10 @@ export default function Dashboard() {
                       <AvatarFallback>SL</AvatarFallback>
                     </Avatar>
                     <div className="flex-1">
-                      <div className="font-medium text-amber-900">Sarah Lee</div>
-                      <div className="text-xs text-amber-700">Level 10 • 4,560 XP</div>
+                      <div className="font-medium text-pink-900">Sarah Lee</div>
+                      <div className="text-xs text-pink-700">Level 10 • 4,560 XP</div>
                     </div>
-                    <Badge variant="outline" className="bg-amber-600/10 text-amber-600">
+                    <Badge variant="outline" className="bg-amber-300/10 text-amber-600">
                       3rd
                     </Badge>
                   </div>
